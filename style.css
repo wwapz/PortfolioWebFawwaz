@@ -1,0 +1,186 @@
+body {
+	font-family: Poppins;
+	margin: 0px;
+	background-color: #FC9C22;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	background-color: #61E76C;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+	position: absolute;
+  	left: 50%;
+  	transform: translateX(-50%);
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 10px;
+}
+
+nav {
+	display: flex;
+	flex: 1;
+	background: #61E76C;
+	color: white;
+	text-align: center;
+	
+}
+
+
+
+nav ul li {
+	display: inline;
+	margin: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    font-weight: 600;
+    top: auto;
+}
+
+.Nama {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 64px;
+}
+
+.Nama img {
+	 width: 240px;
+}
+
+.Nama h3 {
+	color: white;
+	font-size: 36px;
+	margin-bottom: 0px;
+}
+
+.Nama p {
+	color: white;
+	margin-top: 0px;
+}
+
+.deskripsi{
+	margin-bottom: 144px;
+}
+.deskripsi p {
+	color: white;
+	margin-left: 15%;
+	margin-right: 15%;
+	text-align: justify;
+}
+
+.sosmed nav {
+	margin-bottom: 144px;
+	align-content: center;
+	font-weight: 200;
+}
+
+.sosmed nav ul{
+	position: absolute;
+  	left: 50%;
+  	transform: translateX(-50%);
+}
+
+.sosmed nav ul li{
+	font-weight: 600;
+}
+
+.gallery {
+	columns: 360px;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 64px;
+}
+
+.gallery img {
+	width: 100%;
+	object-fit: contain;
+	margin: 10px;
+	border-radius: 15px;
+}
+
+.gallery video {
+	width: 100%;
+	object-fit: contain;
+	border-radius: 15px;
+	margin:10px
+}
+
+.deskripsiartwork {
+	color: white;
+	text-align: center;
+	margin: 50px;
+	margin-bottom: 15px;
+	font-weight: 300;
+	font-size: 25px;
+}
+
+.imgkontak {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.imgkontak img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* supaya gambar menyesuaikan tanpa merusak aspect ratio */
+  opacity: 0.3; /* opsional: kasih efek transparan */
+}
+
+.namakontak {
+	position: ;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 100px
+}
+
+.namakontak nav {
+	background-color:rgba(0,0,0,0.00);
+	margin-left: -50px;
+}
+
+.namakontak nav ul {
+    align-content: center;
+    margin-right: 0px;
+}
+
+.namakontak h3 {
+    color: white;
+    font-size: 36px;
+    padding: center;
+    margin-top: 360px;
+    top: 0%;
+}
+
+.namakontak p {
+	color: white;
+	margin-top: 0px;
+}
+
+footer{
+	background: #FFFFFF;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+footer p {
+	color: orange;
+	text-align: center;
+}
