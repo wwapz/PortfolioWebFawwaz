@@ -1,44 +1,226 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Fawwaz Portfolio</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <title>Paw Portfolio - Home</title>
+  <link rel="icon" type="image/png" href="logopaw.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-<nav>
-	<div class="title">Portfolio</div>
-		<ul>
-			<li><a href="index.html"><span>Fawwaz</span></a></li>
-			<li><a href="PortoCollection.html"><span>Artwork</span></a></li>
-			<li><a href="PortoContact.html"><span>Contact</span></a></li>
-		</ul>
-	</nav>
 
-	<div class="Nama">
-			<img src="PP.png">
-			<h3>Fawwaz Shabri Muttaqi</h3>
-		<p>digital media enthusiast</p>
-	</div>
-	
-	<div class="deskripsi">
-	<p>A passionate beginner in digital media with a growing track record and a deep interest in visual storytelling. Since 2020, I’ve been actively involved in digital media communities—constantly learning, sharing, and collaborating. My journey began with curiosity, and over time I’ve explored and developed skills in 3D, design, photography, UI design, and motion graphics. <br><br>Along the way, I’ve had the opportunity to work on freelance projects, intern at NusaEdu, and contribute as a design division member in a student organization for over a year. These experiences have helped me better understand creative workflows, teamwork, and the value of continuous learning. Currently, I'm still learning and experimenting with tools like Blender, Figma, Adobe Creative Cloud, and other creative software—always open to feedback and excited to keep growing through new challenges and collaborations.</p>
-	</div>
-	
-	<div class="namakontak">
-		<nav>
-			<ul>
-				<li><a href="https://instagram.com/f_what_" target="_blank"><span>Instagram</span></a></li>
-				<li><a href="https://foriio.com/fawwaz" target="_blank"><span>Foriio</span></a></li>
-				<li><a href="https://wa.me/6282130970437" target="_blank"><span>Whatsapp</span></a></li>
-				<li>email: fawwazshabrim@upi.edu</li>
-			</ul>
-		</nav>
-	</div>
-	
-	<footer>
-		<p>wwap - 2025</p>
-	</footer>
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container position-relative">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="logopawwhite.png" alt="Logo" width="30" height="30" class="me-2">
+      <span>Portfolio</span>
+    </a>
+
+    <ul class="navbar-nav nav-center d-none d-lg-flex flex-row gap-4">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="PortofolioCollection.html">Collection</a></li>
+      <li><a class="nav-link" href="PortfolioContact.html">Contact</a></li>
+    </ul>
+
+    <button class="navbar-toggler custom-toggler d-lg-none" type="button" onclick="toggleNav()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<div id="navOverlay" class="nav-overlay">
+  <button class="close-btn" onclick="toggleNav()">×</button>
+  <ul class="overlay-nav">
+    <li><a class="nav-link" href="index.html">Home</a></li>
+    <li><a class="nav-link" href="PortofolioCollection.html">Collection</a></li>
+    <li><a class="nav-link" href="PortfolioContact.html">Contact</a></li>
+  </ul>
+</div>
+
+<section class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content text-center">
+      <h1 class="hero-title">Salve! - Halo!</h1>
+      <p class="hero-subtitle">somnium tuum visualiza - visualize your dream</p>
+    </div>
+  </div>
+</section>
+
+<div class="about">
+  <p class="about-abouttext">melius me cognosce - get to know me better</p>
+</div>
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="photo-container">
+        <img src="profile1.png" alt="Person" class="photo-slide active" />
+        <img src="profile2.png" alt="Person" class="photo-slide" />
+        <img src="profile3.png" alt="Person" class="photo-slide" />
+        <div class="photo-text">
+          <div class="name">Fawwaz Shabri M</div>
+          <div class="job">Visual Media  Generalist</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-8">
+      <div class="description">
+        <p>A curious and driven visual media generalist with a growing portfolio and a strong passion for storytelling through visuals. Since 2020, I have immersed myself in the digital media landscape—learning, experimenting, and collaborating within creative communities. My exploration spans 3D modeling, photography, UI/UX design, branding, and motion graphics, forming a versatile skill set that balances both aesthetics and functionality.</p>
+        <p>I have had the opportunity to work on freelance projects, intern at NusaEdu, and contribute to the design division of a student organization for over a year—experiences that have sharpened my adaptability, communication skills, and ability to contribute meaningfully within creative teams. My approach is grounded in continuous learning, and I actively explore tools and workflows such as Blender, Figma, and the Adobe Creative Cloud suite.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="tools-section py-5">
+  <div class="container">
+    <div class="row justify-content-center g-3">
+      <div class="col-3 col-md-2 col-lg-1 text-center">
+        <img src="icons/After Effect.png" alt="After Effect" class="tool-icon" />
+      </div>
+      <div class="col-3 col-md-2 col-lg-1 text-center">
+        <img src="icons/Lightroom.png" alt="Lightroom" class="tool-icon" />
+      </div>
+      <div class="col-3 col-md-2 col-lg-1 text-center">
+        <img src="icons/Premiere Pro.png" alt="Premiere Pro" class="tool-icon" />
+      </div>
+      <div class="col-3 col-md-2 col-lg-1 text-center">
+        <img src="icons/Photoshop.png" alt="Photoshop" class="tool-icon" />
+      </div>
+      <div class="col-3 col-md-2 col-lg-1 text-center">
+        <img src="icons/Illustrator.png" alt="Illustrator" class="tool-icon" />
+      </div>
+      <div class="col-3 col-md-2 col-lg-1 text-center">
+        <img src="icons/Figma.png" alt="Figma" class="tool-icon" />
+      </div>
+      <div class="col-3 col-md-2 col-lg-1 text-center">
+        <img src="icons/Blender.png" alt="Blender" class="tool-icon" />
+      </div>
+      <div class="col-3 col-md-2 col-lg-1 text-center">
+        <img src="icons/Canva.png" alt="Canva" class="tool-icon" />
+      </div>
+      <div class="col-3 col-md-2 col-lg-1 text-center">
+        <img src="icons/Capcut.png" alt="Capcut" class="tool-icon" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="collection-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">collectio mea - my collection</h2>
+
+    <div id="collectionCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-6 col-md-4 mb-4">
+              <div class="card collection-card">
+                <img src="img9.png" class="card-img-top" alt="Item 1">
+                <div class="card-overlay">
+                  <div class="overlay-text">Design Graphic</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 mb-4">
+              <div class="card collection-card">
+                <img src="Vid3.png" class="card-img-top" alt="Item 2">
+                <div class="card-overlay">
+                  <div class="overlay-text">Animation</div>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-md-block col-md-4 mb-4">
+              <div class="card collection-card">
+                <img src="img15.jpg" class="card-img-top" alt="Item 3">
+                <div class="card-overlay">
+                  <div class="overlay-text">3D Render</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6 col-md-4">
+              <div class="card collection-card">
+                <img src="img8.jpg" class="card-img-top" alt="Item 4">
+                <div class="card-overlay">
+                  <div class="overlay-text">UI/UX Design</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="card collection-card">
+                <img src="img5.JPG" class="card-img-top" alt="Item 5">
+                <div class="card-overlay">
+                  <div class="overlay-text">Photography</div>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-md-block col-md-4">
+              <div class="card collection-card">
+                <img src="img17.jpg" class="card-img-top" alt="Item 6">
+                <div class="card-overlay">
+                  <div class="overlay-text">Brand Identity</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#collectionCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#collectionCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="PortofolioCollection.html" class="btn btn-orange">View All Collection</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer py-4 mt-5">
+  <div class="container text-center">
+    <ul class="footer-links list-inline mb-3">
+      <li class="list-inline-item"><a href="https://instagram.com/f_what_" target="_blank">Instagram</a></li>
+      <li class="list-inline-item"><a href="https://foriio.com/fawwaz" target="_blank">Foriio</a></li>
+      <li class="list-inline-item"><a href="https://wa.me/6282190370437">Contact Me</a></li>
+      <li class="list-inline-item"><a href="mailto:fawwazshabrim@upi.edu">Email</a></li>
+    </ul>
+    <p class="footer-copy mb-0">&copy; 2025 Fawwaz Shabri M. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const slides = document.querySelectorAll('.photo-slide');
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }, 3000);
+
+  showSlide(0);
+
+  function toggleNav() {
+    document.getElementById('navOverlay').classList.toggle('active');
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
